@@ -8,9 +8,11 @@ import Experience from '../components/Experience.js'
 import Skills from '../components/Skills.js'
 import Education from '../components/Education'
 import Footer from '../components/Footer'
+import Projects from '../components/Projects.js'
 
 const GlobalStyles = styled('div')`
   font-family: 'Overpass', 'Helvetica', 'Georgia', sans-serif;
+  color: white;
   a {
     text-decoration: none;
   }
@@ -42,6 +44,7 @@ export default function Home() {
         <Card />
       </Left>
       <Right>
+        {/* <Projects /> */}
         <Experience />
         <Education />
         <Skills />

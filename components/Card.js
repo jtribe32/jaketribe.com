@@ -5,7 +5,7 @@ const ProfilePic = styled('img')`
   width: 15rem;
   height: auto;
   border-radius: 8rem;
-  border: 0.25rem solid #3b80fe;
+  border: 0.25rem solid #3498db;
   margin-bottom: 1rem;
 `
 
@@ -26,7 +26,7 @@ const Icons = styled('div')`
 const Contact = styled('button')`
   width: 8rem;
   height: 3rem;
-  background: #3b80fe;
+  background: #3498db;
   border-radius: 3rem;
   border: none;
 

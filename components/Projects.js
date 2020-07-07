@@ -10,7 +10,7 @@ const Container = styled('div')`
   }
 `
 
-export default function Skills() {
+export default function Projects() {
   return (
     <Container>
       <h2>Skills</h2>

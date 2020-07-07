@@ -1,8 +1,14 @@
 import React from 'react'
+import styled from 'styled-components'
+
+const Container = styled('div')`
+  padding: 3rem;
+  background: #3498db;
+`
 
 export default function Experience() {
   return (
-    <div>
+    <Container>
       <h2>Experience</h2>
       <h4>Nozzle.io</h4>
       <ul>
@@ -38,6 +44,6 @@ export default function Experience() {
           organization
         </li>
       </ul>
-    </div>
+    </Container>
   )
 }

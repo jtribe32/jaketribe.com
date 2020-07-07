@@ -8,7 +8,7 @@ const FooterStyles = styled('div')`
   position: relative;
   z-index: 1;
   padding: 1rem;
-  background: gray;
+  background: #2c3e50;
   color: white;
   box-shadow: 0 -10px 20px -10px rgba(0, 0, 0, 0.3);
 
