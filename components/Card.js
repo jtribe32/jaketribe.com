@@ -11,6 +11,7 @@ const ProfilePic = styled('img')`
 
 const H1 = styled('h1')`
   font-size: 3rem;
+  color: black;
 `
 
 const Icons = styled('div')`

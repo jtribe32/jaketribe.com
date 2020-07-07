@@ -25,7 +25,7 @@ const GlobalStyles = styled('div')`
 const Left = styled('div')`
   text-align: center;
   position: fixed;
-  top: 35%;
+  top: 20%;
   left: 15%;
 `
 
