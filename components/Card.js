@@ -20,9 +20,18 @@ const Icons = styled('div')`
   a {
     margin: 1rem;
     color: black;
-
-    :hover {
-    }
+  }
+  .fa-github:hover {
+    color: #333;
+  }
+  .fa-linkedin-in:hover {
+    color: #0072b1;
+  }
+  .fa-instagram:hover {
+    color: #dd2a7b;
+  }
+  .fa-facebook-square:hover {
+    color: #3b5998;
   }
 `
 
