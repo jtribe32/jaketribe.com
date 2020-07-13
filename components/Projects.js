@@ -2,27 +2,30 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Container = styled('div')`
+  img {
+    width: 35rem;
+    text-align: center;
+  }
+`
+
+const ProjectOne = styled('div')`
+  padding: 3rem;
+  background: #2ecc71;
+`
+const ProjectTwo = styled('div')`
   padding: 3rem;
   background: #f1c40f;
-
-  img {
-    margin: 1rem;
-  }
 `
 
 export default function Projects() {
   return (
-    <div>
-      <Container>
-        <h2>Projects Worked On</h2>
-        <img src="../public/nozzle.png" />
-      </Container>
-      <Container>
-        <img src="../public/rpChiro.png" />
-      </Container>
-      <Container>
-        <img src="../public/rpEmail.png" />
-      </Container>
-    </div>
+    <Container>
+      <ProjectOne>
+        <img src="nozzle.png" />
+      </ProjectOne>
+      <ProjectTwo>
+        <img src="rpChiro.png" />
+      </ProjectTwo>
+    </Container>
   )
 }
