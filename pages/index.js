@@ -44,7 +44,7 @@ export default function Home() {
         <Card />
       </Left>
       <Right>
-        {/* <Projects /> */}
+        <Projects />
         <Experience />
         <Education />
         <Skills />
