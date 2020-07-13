@@ -11,5 +11,15 @@ const Container = styled('div')`
 `
 
 export default function Projects() {
-  return <Container>hello</Container>
+  return (
+    <Container>
+      <ProjectOne>
+        <h2>Projects Worked On</h2>
+        <img src="nozzle.png" />
+      </ProjectOne>
+      <ProjectTwo>
+        <img src="rpChiro.png" />
+      </ProjectTwo>
+    </Container>
+  )
 }
