@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const Container = styled('div')`
   img {
-    width: 35rem;
+    width: 100%;
     text-align: center;
   }
 `

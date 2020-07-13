@@ -27,6 +27,12 @@ const Left = styled('div')`
   position: fixed;
   top: 20%;
   left: 15%;
+
+  @media only screen and (max-width: 600px) {
+    position: static;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
 `
 
 const Right = styled('div')`
@@ -34,6 +40,11 @@ const Right = styled('div')`
   right: 0%;
   top: 0%;
   width: 50%;
+
+  @media only screen and (max-width: 600px) {
+    position: static;
+    width: 100%;
+  }
 `
 
 export default function Home() {

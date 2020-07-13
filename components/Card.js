@@ -19,8 +19,10 @@ const Icons = styled('div')`
 
   a {
     margin: 1rem;
-
     color: black;
+
+    :hover {
+    }
   }
 `
 
