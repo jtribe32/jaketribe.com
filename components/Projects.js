@@ -5,11 +5,24 @@ const Container = styled('div')`
   padding: 3rem;
   background: #f1c40f;
 
-  i {
+  img {
     margin: 1rem;
   }
 `
 
 export default function Projects() {
-  return <Container>hello</Container>
+  return (
+    <div>
+      <Container>
+        <h2>Projects Worked On</h2>
+        <img src="../public/nozzle.png" />
+      </Container>
+      <Container>
+        <img src="../public/rpChiro.png" />
+      </Container>
+      <Container>
+        <img src="../public/rpEmail.png" />
+      </Container>
+    </div>
+  )
 }
