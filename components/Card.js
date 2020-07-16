@@ -28,7 +28,25 @@ const Icons = styled('div')`
     color: #0072b1;
   }
   .fa-instagram:hover {
-    color: #dd2a7b;
+    color: transparent;
+    background: radial-gradient(
+      circle at 30% 107%,
+      #fdf497 0%,
+      #fdf497 5%,
+      #fd5949 45%,
+      #d6249f 60%,
+      #285aeb 90%
+    );
+    background: -webkit-radial-gradient(
+      circle at 30% 107%,
+      #fdf497 0%,
+      #fdf497 5%,
+      #fd5949 45%,
+      #d6249f 60%,
+      #285aeb 90%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
   }
   .fa-facebook-square:hover {
     color: #3b5998;
