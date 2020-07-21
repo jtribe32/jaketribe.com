@@ -9,6 +9,7 @@ const Container = styled('div')`
 const Right = styled('span')`
   float: right;
   vertical-align: sub;
+  font-size: 1rem;
 `
 
 const Entry = styled('div')`
@@ -36,7 +37,7 @@ export default function Experience() {
       </Entry>
       <Entry>
         <Company>
-          Naccarato Leadership Center <Right>May 2019- Dec 2019</Right>
+          Naccarato Leadership Center <Right>May - Dec 2019</Right>
         </Company>
         <SubText>I.T. Specialist</SubText>
       </Entry>

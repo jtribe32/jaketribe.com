@@ -9,6 +9,7 @@ const Container = styled('div')`
 const Right = styled('span')`
   float: right;
   vertical-align: sub;
+  font-size: 1rem;
 `
 
 const Entry = styled('div')`
