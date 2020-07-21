@@ -59,9 +59,14 @@ const Contact = styled('button')`
   background: #3498db;
   border-radius: 3rem;
   border: none;
+  transition: all 0.2s ease-in-out;
 
   a {
     color: white;
+  }
+
+  &:hover {
+    transform: scale(1.05);
   }
 `
 
