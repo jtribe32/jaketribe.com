@@ -6,24 +6,40 @@ const Container = styled('div')`
   background: #3498db;
 `
 
-const Left = styled('div')``
+const Right = styled('span')`
+  float: right;
+  vertical-align: sub;
+`
 
-const Right = styled('div')`
-  display: inline;
+const Entry = styled('div')`
+  margin-bottom: 3rem;
+`
+
+const SubText = styled('div')`
+  padding-left: 2rem;
+  font-size: 1rem;
+`
+const Company = styled('div')`
+  font-size: 1.25rem;
 `
 
 export default function Experience() {
   return (
     <Container>
       <h2>Experience</h2>
-      <Left>
-        <h4>Nozzle.io</h4>
-        <p>Front End Intern</p>
-      </Left>
-      <Right>Feb 2020 - Current</Right>
-      <h4>The Naccarato Leadership Center</h4>
-      <p>I.T. Specialist</p>
-      <Right>May 2019 - Dec 2019</Right>
+      <Entry>
+        <Company>
+          Nozzle.io <Right>Feb 2020 - Current</Right>
+        </Company>
+
+        <SubText>Front End Intern</SubText>
+      </Entry>
+      <Entry>
+        <Company>
+          Naccarato Leadership Center <Right>May 2019- Dec 2019</Right>
+        </Company>
+        <SubText>I.T. Specialist</SubText>
+      </Entry>
     </Container>
   )
 }
