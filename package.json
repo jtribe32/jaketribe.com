@@ -1,7 +1,7 @@
 {
-  "name": "my-app",
+  "name": "jaketribe.com",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "start": "next",
     "build": "next build"
