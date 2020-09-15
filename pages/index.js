@@ -10,6 +10,13 @@ import Skills from '../components/Skills.js'
 import Education from '../components/Education'
 import Footer from '../components/Footer'
 import Projects from '../components/Projects.js'
+import { createGlobalStyle } from 'styled-components'
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    margin: 0;
+  }
+`
 
 const GlobalStyles = styled('div')`
   font-family: 'Overpass', 'Helvetica', 'Georgia', sans-serif;
@@ -50,18 +57,21 @@ const Right = styled('div')`
 
 export default function Home() {
   return (
-    <GlobalStyles>
-      <Head />
-      <Left>
-        <Card />
-      </Left>
-      <Right>
-        <Projects />
-        <Experience />
-        <Education />
-        <Skills />
-        <Footer />
-      </Right>
-    </GlobalStyles>
+    <>
+      <GlobalStyle />
+      <GlobalStyles>
+        <Head />
+        <Left>
+          <Card />
+        </Left>
+        <Right>
+          <Projects />
+          <Experience />
+          <Education />
+          <Skills />
+          <Footer />
+        </Right>
+      </GlobalStyles>
+    </>
   )
 }

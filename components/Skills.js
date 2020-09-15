@@ -81,6 +81,10 @@ export default function Skills() {
           <i className="fab fa-github fa-3x"></i>
           <div className="name">Git</div>
         </div>
+        <div className="nameBox">
+          <i className="fab fa-python fa-3x"></i>
+          <div className="name">Python</div>
+        </div>
       </Skill>
     </Container>
   )

@@ -33,11 +33,11 @@ export default function Experience() {
           Nozzle.io <Right>Feb 2020 - Current</Right>
         </Company>
 
-        <SubText>Front End Intern</SubText>
+        <SubText>Front End Junior Developer</SubText>
       </Entry>
       <Entry>
         <Company>
-          Naccarato Leadership Center <Right>May - Dec 2019</Right>
+          Naccarato Leadership Center <Right>May 2019 - Dec 2019</Right>
         </Company>
         <SubText>I.T. Specialist</SubText>
       </Entry>
