@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "start": "next",
-    "build": "next build",
-    "now-build": "yarn build"
+    "build": "next build"
   },
   "dependencies": {
     "bl": "^2.2.1",
