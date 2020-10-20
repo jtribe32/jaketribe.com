@@ -21,7 +21,7 @@ export default function Projects() {
   return (
     <Container>
       <ProjectOne>
-        <h2>Projects Worked On</h2>
+        <h2>Projects I've Worked On</h2>
         <img src="nozzle.png" />
       </ProjectOne>
       <ProjectTwo>

@@ -63,6 +63,7 @@ const Contact = styled('button')`
 
   a {
     color: white;
+    font-size: 1rem;
   }
 
   &:hover {
