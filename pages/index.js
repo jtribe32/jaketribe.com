@@ -36,7 +36,7 @@ const Left = styled('div')`
   top: 20%;
   left: 15%;
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 900px) {
     position: static;
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -49,7 +49,7 @@ const Right = styled('div')`
   top: 0%;
   width: 50%;
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 900px) {
     position: static;
     width: 100%;
   }
