@@ -8,7 +8,10 @@ const Container = styled('div')`
   i {
     margin: 1rem;
   }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 900px) {
+    text-align: center;
+  }
+  h2 {
     text-align: center;
   }
 `

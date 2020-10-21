@@ -4,6 +4,10 @@ import styled from 'styled-components'
 const Container = styled('div')`
   padding: 3rem;
   background: #2ecc71;
+
+  h2 {
+    text-align: center;
+  }
 `
 
 const Right = styled('span')`
@@ -11,7 +15,7 @@ const Right = styled('span')`
   vertical-align: sub;
   font-size: 1rem;
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 900px) {
     text-align: center;
     float: none;
     display: block;
@@ -26,7 +30,7 @@ const SubText = styled('div')`
   padding-left: 2rem;
   font-size: 1rem;
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 900px) {
     padding-left: 0;
     text-align: center;
   }
@@ -34,7 +38,7 @@ const SubText = styled('div')`
 const School = styled('div')`
   font-size: 1.25rem;
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 900px) {
     text-align: center;
   }
 `

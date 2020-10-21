@@ -7,7 +7,7 @@ const Container = styled('div')`
     text-align: center;
   }
 
-  @media only screen and (max-width: 600px) {
+  h2 {
     text-align: center;
   }
 `
