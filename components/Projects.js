@@ -6,6 +6,10 @@ const Container = styled('div')`
     width: 100%;
     text-align: center;
   }
+
+  @media only screen and (max-width: 600px) {
+    text-align: center;
+  }
 `
 
 const ProjectOne = styled('div')`
@@ -22,10 +26,14 @@ export default function Projects() {
     <Container>
       <ProjectOne>
         <h2>Projects I've Worked On</h2>
-        <img src="nozzle.png" />
+        <a href="https://www.nozzle.io" target="_blank">
+          <img src="nozzle.png" />
+        </a>
       </ProjectOne>
       <ProjectTwo>
-        <img src="rpChiro.png" />
+        <a href="https://www.rpchiro.com" target="_blank">
+          <img src="rpChiro.png" />
+        </a>
       </ProjectTwo>
     </Container>
   )

@@ -4,12 +4,19 @@ import styled from 'styled-components'
 const Container = styled('div')`
   padding: 3rem;
   background: #3498db;
+  text-align: center;
 `
 
 const Right = styled('span')`
   float: right;
   vertical-align: sub;
   font-size: 1rem;
+
+  @media only screen and (max-width: 600px) {
+    text-align: center;
+    float: none;
+    display: block;
+  }
 `
 
 const Entry = styled('div')`
@@ -19,9 +26,17 @@ const Entry = styled('div')`
 const SubText = styled('div')`
   padding-left: 2rem;
   font-size: 1rem;
+
+  @media only screen and (max-width: 600px) {
+    padding-left: 0;
+  }
 `
 const Company = styled('div')`
   font-size: 1.25rem;
+
+  @media only screen and (max-width: 600px) {
+    text-align: center;
+  }
 `
 
 export default function Experience() {

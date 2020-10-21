@@ -8,6 +8,9 @@ const Container = styled('div')`
   i {
     margin: 1rem;
   }
+  @media only screen and (max-width: 600px) {
+    text-align: center;
+  }
 `
 
 const Skill = styled('div')`

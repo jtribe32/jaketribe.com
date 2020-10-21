@@ -10,6 +10,12 @@ const Right = styled('span')`
   float: right;
   vertical-align: sub;
   font-size: 1rem;
+
+  @media only screen and (max-width: 600px) {
+    text-align: center;
+    float: none;
+    display: block;
+  }
 `
 
 const Entry = styled('div')`
@@ -19,9 +25,18 @@ const Entry = styled('div')`
 const SubText = styled('div')`
   padding-left: 2rem;
   font-size: 1rem;
+
+  @media only screen and (max-width: 600px) {
+    padding-left: 0;
+    text-align: center;
+  }
 `
 const School = styled('div')`
   font-size: 1.25rem;
+
+  @media only screen and (max-width: 600px) {
+    text-align: center;
+  }
 `
 
 export default function Education() {
