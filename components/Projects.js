@@ -27,12 +27,15 @@ export default function Projects() {
       <ProjectOne>
         <h2>Projects I've Worked On</h2>
         <a href="https://www.nozzle.io" target="_blank">
-          <img src="nozzle.png" />
+          <img src="nozzle.png" alt="Enterprise Keyword Rank Tracker" />
         </a>
       </ProjectOne>
       <ProjectTwo>
         <a href="https://www.rpchiro.com" target="_blank">
-          <img src="rpChiro.png" />
+          <img
+            src="rpChiro.png"
+            alt="Dr. Jim Naccarato Chiropractic Consulting"
+          />
         </a>
       </ProjectTwo>
     </Container>
