@@ -13,6 +13,11 @@ import Projects from '../components/Projects.js'
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
   body {
     margin: 0;
   }
@@ -21,6 +26,12 @@ const GlobalStyle = createGlobalStyle`
 const GlobalStyles = styled('div')`
   font-family: 'Overpass', 'Helvetica', 'Georgia', sans-serif;
   color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: auto;
   a {
     text-decoration: none;
   }

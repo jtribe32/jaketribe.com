@@ -16,7 +16,6 @@
     "react-dom": "16.13.1",
     "styled-components": "^5.1.1",
     "styled-reset": "^4.2.0",
-    "swagger-ui-react": "^3.28.0",
     "tinycolor2": "^1.4.1"
   },
   "devDependencies": {
