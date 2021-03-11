@@ -10,18 +10,6 @@ import Skills from '../components/Skills.js'
 import Education from '../components/Education'
 import Footer from '../components/Footer'
 import Projects from '../components/Projects.js'
-import { createGlobalStyle } from 'styled-components'
-
-const GlobalStyle = createGlobalStyle`
-html, body {
-    height: 100%;
-    overflow: hidden;
-}
-
-  body {
-    margin: 0;
-  }
-`
 
 const GlobalStyles = styled('div')`
   font-family: 'Overpass', 'Helvetica', 'Georgia', sans-serif;
@@ -69,7 +57,6 @@ const Right = styled('div')`
 export default function Home() {
   return (
     <>
-      <GlobalStyle />
       <GlobalStyles>
         <Head />
         <Left>
