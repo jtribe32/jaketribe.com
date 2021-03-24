@@ -1,5 +1,6 @@
 import React from 'react'
 import Head from '../components/Head.js'
+import App from 'next/app'
 
 import styled from 'styled-components'
 
