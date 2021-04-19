@@ -1,5 +1,5 @@
 import React from 'react'
-import Head from '../components/Head.js'
+import Header from '../components/Header.js'
 import App from 'next/app'
 
 import styled from 'styled-components'
@@ -58,7 +58,7 @@ export default function Home() {
   return (
     <>
       <GlobalStyles>
-        <Head />
+        <Header />
         <Left>
           <Card />
         </Left>
