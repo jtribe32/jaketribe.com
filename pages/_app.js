@@ -11,7 +11,7 @@ import reset from 'styled-reset'
 import { GA_TRACKING_ID } from 'lib/gtag'
 import Theme, { ThemeContext } from 'utils/Theme'
 
-import Head from 'next/Head'
+import Head from 'next/head'
 import NavWrapper from 'components/NavWrapper'
 import Container from 'components/Container'
 

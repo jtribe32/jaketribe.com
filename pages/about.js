@@ -1,5 +1,5 @@
 import React from 'react'
-import Head from 'next/Head'
+import Head from 'next/head'
 import tw from 'twin.macro'
 import styled from 'styled-components'
 import { H1, P } from 'components/Html'

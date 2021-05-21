@@ -1,6 +1,6 @@
 import React from 'react'
 import 'twin.macro'
-import Head from 'next/Head'
+import Head from 'next/head'
 import styled from 'styled-components'
 import Link from 'next/link'
 
