@@ -1,58 +1,25 @@
 import React from 'react'
 import styled from 'styled-components'
+import tw from 'twin.macro'
 //
 
 const belowMobile = `@media(max-width: ${700}px)`
 
 const FooterStyles = styled('div')`
-  position: relative;
-  z-index: 1;
-  padding: 1rem;
-  background: #2c3e50;
-  color: white;
-  box-shadow: 0 -10px 20px -10px rgba(0, 0, 0, 0.3);
+  ${tw`relative p-4 z-1`}
 
   ${belowMobile} {
-    .navLinks {
-      padding: 1rem;
-    }
-    .navContainer {
-      display: flex;
-      flex-wrap: wrap;
-      width: 100%;
-    }
     .container {
-      display: block;
+      ${tw`block`}
     }
   }
 
   .container {
-    diplay: flex;
-    margin-right: 4rem;
-    align-items: baseline;
+    ${tw`px-4 flex mr-16 items-baseline`}
   }
 
   .copyright {
-    display: inline-block;
-    text-align: right;
-    font-size: .75rem;
-    align-self: center;
-  }
-
-  .navContainer {
-    display: inline-block;
-  }
-
-  .navLinks {
-    display: inline-block;
-    text-align: left;
-    margin-right: 1rem;
-
-    :hover {
-      color: #60bd68;
-    }
-  }
-
+    ${tw`inline-block text-right text-xs self-center`}
   }
 `
 
@@ -61,7 +28,7 @@ export default function Footer() {
     <FooterStyles>
       <div className="container">
         <div className="copyright">
-          &copy; {`20${new Date().getYear() - 100}`} Jake Tribe.
+          &copy; {`20${new Date().getYear() - 100}`} Jake Tribe
         </div>
       </div>
     </FooterStyles>

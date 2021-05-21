@@ -1,3 +1,3 @@
-import Color from "tinycolor2";
+import Color from 'tinycolor2'
 
-export default Color;
+export default Color

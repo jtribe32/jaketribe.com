@@ -1,75 +1,98 @@
 import React from 'react'
-import Header from '../components/Header.js'
 import App from 'next/app'
+import tw from 'twin.macro'
+import {
+  createGlobalStyle,
+  ThemeProvider as StyledThemeProvider,
+} from 'styled-components'
+import reset from 'styled-reset'
+//
 
-import styled from 'styled-components'
+import { GA_TRACKING_ID } from 'lib/gtag'
+import Theme, { ThemeContext } from 'utils/Theme'
 
-import Card from '../components/Card'
-import Experience from '../components/Experience.js'
-import Skills from '../components/Skills.js'
-import Education from '../components/Education'
-import Footer from '../components/Footer'
-import Projects from '../components/Projects.js'
+import Head from 'next/Head'
+import NavWrapper from 'components/NavWrapper'
+import Container from 'components/Container'
 
-const GlobalStyles = styled('div')`
-  font-family: 'Overpass', 'Helvetica', 'Georgia', sans-serif;
-  color: white;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  overflow: auto;
+const GlobalStyles = createGlobalStyle`
+  ${reset};
+  html, body, body, [data-reactroot] {
+    ${tw`min-h-full w-full bg-white`}
+   
+  }
+  html, body {
+    ${tw` text-base leading-none font-normal`}
+    font-family: "Overpass", "Helvetica", "Georgia", sans-serif;
+    
+  }
+  * {
+    ${tw`box-border`}
+  }
   a {
-    text-decoration: none;
+     ${tw`no-underline`}
+    color: inherit;
+  }
+  [data-name="mojs-shape"] {
+     ${tw`fixed! pointer-events-none`}
+    z-index: 99999999;
   }
 
-  h2 {
-    font-size: 3rem;
-  }
+  
 `
 
-const Left = styled('div')`
-  text-align: center;
-  position: fixed;
-  top: 20%;
-  left: 15%;
-
-  @media only screen and (max-width: 900px) {
-    position: static;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
-`
-
-const Right = styled('div')`
-  position: absolute;
-  right: 0%;
-  top: 0%;
-  width: 50%;
-
-  @media only screen and (max-width: 900px) {
-    position: static;
-    width: 100%;
-  }
-`
-
-export default function Home() {
+function ThemeProvider({ children }) {
   return (
-    <>
-      <GlobalStyles>
-        <Header />
-        <Left>
-          <Card />
-        </Left>
-        <Right>
-          <Projects />
-          <Experience />
-          <Education />
-          <Skills />
-          <Footer />
-        </Right>
-      </GlobalStyles>
-    </>
+    <ThemeContext.Provider value={Theme}>
+      <StyledThemeProvider theme={Theme}>{children}</StyledThemeProvider>
+    </ThemeContext.Provider>
+  )
+}
+
+export default function MyApp({ Component, pageProps }) {
+  return (
+    <ThemeProvider>
+      <Head title="Jake Tribe">
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_TRACKING_ID}', {
+              page_path: window.location.pathname,
+            });
+          `,
+          }}
+        />
+
+        <link
+          href="//fonts.googleapis.com/css?family=Overpass:200,300,400,400i,600,700,800"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700"
+          rel="stylesheet"
+        />
+
+        <link
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+          rel="stylesheet"
+        />
+      </Head>
+      <GlobalStyles />
+      <NavWrapper>
+        <Container>
+          <Component {...pageProps} />
+        </Container>
+      </NavWrapper>
+    </ThemeProvider>
   )
 }

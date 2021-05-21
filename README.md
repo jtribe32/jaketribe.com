@@ -1,2 +1,0 @@
-# jaketribe.com
-Personal Site
