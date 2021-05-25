@@ -3,6 +3,7 @@ import Head from 'next/head'
 import tw from 'twin.macro'
 import styled from 'styled-components'
 import { H1, P } from 'components/Html'
+import { motion } from 'framer-motion'
 
 const Left = styled('div')`
   ${tw`text-center`}
@@ -22,7 +23,11 @@ const SocialLink = styled('a')`
 
 export default function About() {
   return (
-    <div>
+    <motion.div
+      exit={{ opacity: 0 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+    >
       <Head title="Jake Tribe | About Me" />
       <div tw="grid grid-cols-1 md:(grid-cols-2)">
         <Left>
@@ -74,6 +79,6 @@ export default function About() {
           </Text>
         </Right>
       </div>
-    </div>
+    </motion.div>
   )
 }

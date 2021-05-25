@@ -10,6 +10,7 @@ import reset from 'styled-reset'
 
 import { GA_TRACKING_ID } from 'lib/gtag'
 import Theme, { ThemeContext } from 'utils/Theme'
+import { AnimatePresence } from 'framer-motion'
 
 import Head from 'next/head'
 import NavWrapper from 'components/NavWrapper'
@@ -49,7 +50,7 @@ function ThemeProvider({ children }) {
   )
 }
 
-export default function MyApp({ Component, pageProps }) {
+export default function MyApp({ Component, pageProps, router }) {
   return (
     <ThemeProvider>
       <Head title="Jake Tribe">
@@ -90,7 +91,9 @@ export default function MyApp({ Component, pageProps }) {
       <GlobalStyles />
       <NavWrapper>
         <Container>
-          <Component {...pageProps} />
+          <AnimatePresence exitBeforeEnter>
+            <Component {...pageProps} key={router.route} />
+          </AnimatePresence>
         </Container>
       </NavWrapper>
     </ThemeProvider>
