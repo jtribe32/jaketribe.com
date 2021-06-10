@@ -1,7 +1,7 @@
 {
- "name": "jaketribe.com",
+  "name": "jaketribe.com",
   "version": "0.1.0",
-  "private": true, 
+  "private": true,
   "scripts": {
     "start": "next",
     "build": "next build",
