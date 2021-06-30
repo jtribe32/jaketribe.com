@@ -38,7 +38,8 @@ export default function About() {
             <P>
               I am currently a front-end developer at Nozzle.io working on their
               website and web application. I am also in my final year studying
-              Information Systems at Brigham Young University.
+              Information Systems at Brigham Young University and will graduate
+              in December of 2021.
             </P>
             <P>
               My interests include Technology, Basketball and Golf. Dependable
