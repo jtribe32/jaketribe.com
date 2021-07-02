@@ -6,7 +6,7 @@ import Link from 'next/link'
 //
 
 const NavbarStyles = styled('header')`
-${tw` top-0 w-full h-32`}
+${tw` top-0 w-full h-32 `}
   z-index: 1000;
   .inner {
     ${tw`mx-auto flex items-center justify-between relative h-full px-4`}

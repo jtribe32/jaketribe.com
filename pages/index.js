@@ -31,7 +31,9 @@ const Card = styled('div')`
     ${'' /* cursor: pointer; */}
 
     img {
-      opacity: 0.3;
+      opacity: 0.4;
+      webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+      filter: blur(4px);
     }
     .middle {
       opacity: 1;
@@ -54,36 +56,49 @@ export default function Work() {
       />
       <main>
         <div tw="grid grid-cols-1 md:(grid-cols-2) lg:(grid-cols-3)">
-          {/* <Link href="./projects/nozzle-website"> */}
-          <Card>
-            <img
-              src={require('public/img/nozzleWebsite.png')}
-              alt="Nozzle Website"
-            />
-            <div className="middle">
-              <Text>Nozzle.io Website</Text>
-            </div>
-          </Card>
-          {/* </Link>
-          <Link href="./projects/nozzle-app"> */}
-          <Card>
-            <img src={require('public/img/nozzleApp.png')} alt="Nozzle App" />
-            <div className="middle">
-              <Text>Nozzle.io App</Text>
-            </div>
-          </Card>
-          {/* </Link>
-          <Link href="./projects/rpChiro-website"> */}
-          <Card>
-            <img
-              src={require('public/img/rpChiro.png')}
-              alt="rpChiro Website"
-            />
-            <div className="middle">
-              <Text>RpChiro Website</Text>
-            </div>
-          </Card>
-          {/* </Link> */}
+          <Link href="./projects/nozzle-website">
+            <Card>
+              <img
+                src={require('public/img/nozzleWebsite.png')}
+                alt="Nozzle Website"
+              />
+              <div className="middle">
+                <Text tw="text-xl">Nozzle.io Website</Text>
+              </div>
+            </Card>
+          </Link>
+          <Link href="./projects/nozzle-app">
+            <Card>
+              <img src={require('public/img/nozzleApp.png')} alt="Nozzle App" />
+              <div className="middle">
+                <Text tw="text-xl">Nozzle.io App</Text>
+              </div>
+            </Card>
+          </Link>
+          <Link href="./projects/rpChiro-website">
+            <Card>
+              <img
+                src={require('public/img/rpChiro.png')}
+                alt="rpChiro Website"
+              />
+              <div className="middle">
+                <Text tw="text-xl">
+                  The Naccarato Leadership Center Website
+                </Text>
+              </div>
+            </Card>
+          </Link>
+          <Link href="./projects/google-ux-app">
+            <Card>
+              <img
+                src={require('public/img/googleHiFi.png')}
+                alt="Google UX Certificate App"
+              />
+              <div className="middle">
+                <Text tw="text-xl">Google UX Certificate App</Text>
+              </div>
+            </Card>
+          </Link>
         </div>
       </main>
     </div>
