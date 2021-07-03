@@ -88,7 +88,7 @@ export default function Work() {
               </div>
             </Card>
           </Link>
-          <Link href="./projects/google-ux-app">
+          {/* <Link href="./projects/google-ux-app">
             <Card>
               <img
                 src={require('public/img/googleHiFi.png')}
@@ -98,7 +98,7 @@ export default function Work() {
                 <Text tw="text-xl">Google UX Certificate App</Text>
               </div>
             </Card>
-          </Link>
+          </Link> */}
         </div>
       </main>
     </div>
