@@ -28,7 +28,7 @@ const Card = styled('div')`
   }
 
   :hover {
-    ${'' /* cursor: pointer; */}
+    cursor: pointer;
 
     img {
       opacity: 0.4;
@@ -82,6 +82,8 @@ export default function Work() {
                 src={require('public/img/rpChiro.png')}
                 alt="rpChiro Website"
               />
+            </Link>
+            <Link href="./projects/rpChiro-website">
               <div className="middle">
                 <Text tw="text-xl">
                   The Naccarato Leadership Center Website
