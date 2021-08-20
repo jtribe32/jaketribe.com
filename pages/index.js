@@ -75,8 +75,9 @@ export default function Work() {
               </div>
             </Card>
           </Link>
-          <Link href="./projects/rpChiro-website">
-            <Card>
+
+          <Card>
+            <Link href="./projects/rpChiro-website">
               <img
                 src={require('public/img/rpChiro.png')}
                 alt="rpChiro Website"
@@ -86,8 +87,9 @@ export default function Work() {
                   The Naccarato Leadership Center Website
                 </Text>
               </div>
-            </Card>
-          </Link>
+            </Link>
+          </Card>
+
           <Link href="./projects/google-ux-app">
             <Card>
               <img
