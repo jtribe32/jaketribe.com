@@ -7,7 +7,6 @@ const withOptimizedImages = require('next-optimized-images')
 //   extension: /\.mdx?$/
 // })
 
-module.exports = { experimental: { css: true } }
 const baseConfig = {
   target: 'serverless',
   pageExtensions: ['js', 'jsx', 'md', 'mdx'],
