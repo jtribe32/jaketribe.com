@@ -49,7 +49,7 @@ export default function About() {
               VBA, Tableau, ASP.NET, Python, Analytical Skills, Reasoning Skills
               and Communication Skills
             </P>
-            <form method="get" action="Jake_Tribe_resume.pdf">
+            <form method="get" action="Jake_Tribe_Resume.pdf">
               <ResumeButton type="submit">Resume</ResumeButton>
             </form>
             <div tw="space-x-2">
