@@ -31,7 +31,7 @@ const Card = styled('div')`
     cursor: pointer;
 
     img {
-      opacity: 0.4;
+      opacity: 0.2;
       webkit-filter: blur(4px); /* Chrome, Safari, Opera */
       filter: blur(4px);
     }
@@ -63,7 +63,7 @@ export default function Work() {
                 alt="Nozzle Website"
               />
               <div className="middle">
-                <Text tw="text-xl">Nozzle.io Website</Text>
+                <Text tw="text-2xl font-bold">Nozzle.io Website</Text>
               </div>
             </Card>
           </Link>
@@ -71,7 +71,7 @@ export default function Work() {
             <Card>
               <img src={require('public/img/nozzleApp.png')} alt="Nozzle App" />
               <div className="middle">
-                <Text tw="text-xl">Nozzle.io App</Text>
+                <Text tw="text-2xl font-bold">Nozzle.io App</Text>
               </div>
             </Card>
           </Link>
@@ -83,7 +83,7 @@ export default function Work() {
               />
 
               <div className="middle">
-                <Text tw="text-xl">
+                <Text tw="text-2xl font-bold">
                   The Naccarato Leadership Center Website
                 </Text>
               </div>
