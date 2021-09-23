@@ -23,22 +23,38 @@ export default function NozzleWebsite() {
       <h1 tw="text-center my-4 text-2xl">Nozzle Website</h1>
       <div tw="mx-16 text-lg">
         <p tw="py-4">
-          <Strong>Challenge:</Strong> Customers want an easy and simple way to
-          know about Nozzle and what they offer.
+          <Strong tw="text-blue-400 ">Challenge:</Strong> Customers want an easy
+          and simple way to know about Nozzle and what they offer.
         </p>
         <p tw="py-4">
-          <Strong>Solution:</Strong> Design and manage the marketing website to
-          attract new customers and give information about Nozzle.
+          <Strong tw="text-blue-400 ">Solution:</Strong> Design and manage the
+          marketing website to attract new customers and give information about
+          Nozzle.
         </p>
         <p tw="py-4">
-          <Strong>Role:</Strong> Front-End Developer
+          <Strong tw="text-blue-400 ">Role:</Strong> Front-End Developer
         </p>
         <p tw="py-4">
-          <Strong>Tools:</Strong> React, Javascript, CSS, Tailwinds, Next.js,
-          Contentful
+          <Strong tw="text-blue-400 ">Tools:</Strong> React, Javascript, CSS,
+          Tailwinds, Next.js, Contentful
         </p>
       </div>
-      <div tw="text-center pt-16 text-xl">More coming soon...</div>
+
+      <img
+        src={require('public/img/nozzleWebsite/homePage.png')}
+        tw="w-full"
+        alt="Nozzle Website Home Page"
+      />
+      <img
+        src={require('public/img/nozzleWebsite/pricing.png')}
+        tw="w-full"
+        alt="Nozzle Website Pricing Page"
+      />
+      <img
+        src={require('public/img/nozzleWebsite/blog.png')}
+        tw="w-full"
+        alt="Nozzle Website Blog Page"
+      />
     </>
   )
 }
