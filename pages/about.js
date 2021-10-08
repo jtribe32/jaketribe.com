@@ -45,9 +45,10 @@ export default function About() {
               My interests include Technology, Basketball and Golf. Dependable
               and hardworking, I can pick up new skills and methods of working
               with ease while applying previously learnt skills efficiently.
-              Skills and specialties include SQL, JavaScript, React.js, Swift,
-              VBA, Tableau, ASP.NET, Python, Analytical Skills, Reasoning Skills
-              and Communication Skills
+              Skills and specialties include SQL, Typescript, JavaScript,
+              React.js, Swift, VBA, Tableau, ASP.NET, Python, AWS, Next.js,
+              APIs, using CMS's, Adobe XD, Figma, Analytical Skills, Reasoning
+              Skills and Communication Skills
             </P>
             <form method="get" action="Jake_Tribe_Resume.pdf">
               <ResumeButton type="submit">Resume</ResumeButton>
