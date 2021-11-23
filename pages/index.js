@@ -55,41 +55,45 @@ export default function Work() {
         description="Personal portfolio for Jake Tribe"
       />
       <main>
-        <div tw="grid grid-cols-1 md:(grid-cols-2) lg:(grid-cols-3)">
-          <Link href="./projects/nozzle-website">
-            <Card>
-              <img
-                src={require('public/img/nozzleWebsite.png')}
-                alt="Nozzle Website"
-              />
-              <div className="middle">
-                <Text tw="text-2xl font-bold">Nozzle.io Website</Text>
-              </div>
-            </Card>
-          </Link>
-          <Link href="./projects/nozzle-app">
-            <Card>
-              <img src={require('public/img/nozzleApp.png')} alt="Nozzle App" />
-              <div className="middle">
-                <Text tw="text-2xl font-bold">Nozzle.io App</Text>
-              </div>
-            </Card>
-          </Link>
-          <Link href="./projects/rpChiro-website">
-            <Card>
-              <img
-                src={require('public/img/rpChiro.png')}
-                alt="rpChiro Website"
-              />
+        <div tw="max-w-7xl mx-auto">
+          <div tw="grid grid-cols-1 md:(grid-cols-2) lg:(grid-cols-3)">
+            <Link href="./projects/nozzle-website">
+              <Card>
+                <img
+                  src={require('public/img/nozzleWebsite.png')}
+                  alt="Nozzle Website"
+                />
+                <div className="middle">
+                  <Text tw="text-2xl font-bold">Nozzle.io Website</Text>
+                </div>
+              </Card>
+            </Link>
+            <Link href="./projects/nozzle-app">
+              <Card>
+                <img
+                  src={require('public/img/nozzleApp.png')}
+                  alt="Nozzle App"
+                />
+                <div className="middle">
+                  <Text tw="text-2xl font-bold">Nozzle.io App</Text>
+                </div>
+              </Card>
+            </Link>
+            <Link href="./projects/rpChiro-website">
+              <Card>
+                <img
+                  src={require('public/img/rpChiro.png')}
+                  alt="rpChiro Website"
+                />
 
-              <div className="middle">
-                <Text tw="text-2xl font-bold">
-                  The Naccarato Leadership Center Website
-                </Text>
-              </div>
-            </Card>
-          </Link>
-          {/* <Link href="./projects/google-ux-app">
+                <div className="middle">
+                  <Text tw="text-2xl font-bold">
+                    The Naccarato Leadership Center Website
+                  </Text>
+                </div>
+              </Card>
+            </Link>
+            {/* <Link href="./projects/google-ux-app">
             <Card>
               <img
                 src={require('public/img/googleHiFi.png')}
@@ -100,6 +104,7 @@ export default function Work() {
               </div>
             </Card>
           </Link> */}
+          </div>
         </div>
       </main>
     </div>
