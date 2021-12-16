@@ -36,15 +36,16 @@ export default function About() {
           <Text>
             <H1>Hey, I'm Jake.</H1>
             <P>
-              I am currently a front-end developer at Nozzle.io working on their
-              website and web application. I am also in my final year studying
-              Information Systems at Brigham Young University and will graduate
-              in December of 2021.
+              I'm a passionate software engineer who loves solving business
+              problems with technology. I am currently a front-end developer at
+              Nozzle.io working on their website and web application.
             </P>
             <P>
               My interests include Technology, Basketball and Golf. Dependable
               and hardworking, I can pick up new skills and methods of working
               with ease while applying previously learnt skills efficiently.
+            </P>
+            <P>
               Skills and specialties include SQL, Typescript, JavaScript,
               React.js, Swift, VBA, Tableau, ASP.NET, Python, AWS, Next.js,
               APIs, using CMS's, Adobe XD, Figma, Analytical Skills, Reasoning

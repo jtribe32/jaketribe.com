@@ -8,7 +8,7 @@
     "now-build": "yarn build"
   },
   "engines": {
-    "node": "12.x"
+    "node": "16.x"
   },
   "babelMacros": {
     "twin": {
