@@ -51,7 +51,7 @@ export default function About() {
               APIs, using CMS's, Adobe XD, Figma, Analytical Skills, Reasoning
               Skills and Communication Skills
             </P>
-            <form method="get" action="Jake_Tribe_Resume.pdf">
+            <form method="get" action="Jacob_Tribe_Resume.pdf">
               <ResumeButton type="submit">Resume</ResumeButton>
             </form>
             <div tw="space-x-2">
