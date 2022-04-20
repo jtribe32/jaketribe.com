@@ -86,6 +86,12 @@ export default function MyApp({ Component, pageProps }) {
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
           rel="stylesheet"
         />
+
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5209995950265725"
+          crossorigin="anonymous"
+        ></script>
       </Head>
       <GlobalStyles />
       <NavWrapper>
