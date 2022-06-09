@@ -37,8 +37,8 @@ export default function About() {
             <H1>Hey, I'm Jake.</H1>
             <P>
               I'm a passionate software engineer who loves solving business
-              problems with technology. I am currently a front-end developer at
-              Nozzle.io working on their website and web application.
+              problems with technology. I am currently a Software Engineer at
+              Target working on the Transact UX Specialty team.
             </P>
             <P>
               My interests include Technology, Basketball and Golf. Dependable
